@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share">Share</string>
+    <string name="share_subject">Check out this recipe</string>
+    <string name="share_message">I found a great recipe: %1$s</string>
+</resources>

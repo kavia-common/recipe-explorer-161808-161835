@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a11y_home">Home tab</string>
+    <string name="a11y_search">Search tab</string>
+    <string name="a11y_favorites">Favorites tab</string>
+    <string name="a11y_profile">Profile tab</string>
+</resources>

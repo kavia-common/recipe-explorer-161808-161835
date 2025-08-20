@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Ensure there is an executable gradle wrapper file at the app root for CI.
+set -euo pipefail
+
+# If the actual wrapper exists here, use it; otherwise forward to the real one under this dir.
+if [ -f "./gradlew" ] && [ -x "./gradlew" ]; then
+  exec "./gradlew" "$@"
+fi
+
+# Fallback: delegate to existing wrapper (self-forward safety)
+exec "./gradlew" "$@"

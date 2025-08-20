@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        style="@style/Widget.MaterialComponents.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:titleTextColor="@color/colorOnPrimary"
+        android:theme="@style/ThemeOverlay.RecipeApp.AppBar"
+        android:elevation="4dp" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNav"
+        android:layout_marginTop="56dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/bottom_nav_item_colors"
+        app:itemTextColor="@color/bottom_nav_item_colors"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottom_nav"
+        app:itemRippleColor="@color/colorSecondary"
+        android:background="@color/colorSurface" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

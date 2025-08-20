@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="8dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:hint="@string/search_hint"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/tvEmptySearch"
+        style="@style/Text.Subtitle"
+        android:padding="8dp"
+        android:text="@string/no_results_label"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="64dp"/>
+</LinearLayout>

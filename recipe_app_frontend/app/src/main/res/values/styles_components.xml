@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeOverlay.RecipeApp.AppBar" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="android:textColorPrimary">@color/colorOnPrimary</item>
+        <item name="android:textColorSecondary">@color/colorOnPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="Widget.RecipeApp.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="Widget.RecipeApp.Button.Accent" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="backgroundTint">@color/colorAccent</item>
+    </style>
+
+    <style name="Widget.RecipeApp.Button.Secondary" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/colorOnSurface</item>
+        <item name="backgroundTint">@color/colorSecondary</item>
+    </style>
+</resources>

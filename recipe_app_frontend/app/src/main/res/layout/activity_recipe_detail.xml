@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivHero"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_report_image" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/Text.Title"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipe Title" />
+
+        <TextView
+            android:id="@+id/tvMeta"
+            style="@style/Text.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 min • 4 servings" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnFavorite"
+                style="@style/Widget.RecipeApp.Button.Accent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_to_favorites"/>
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="0dp" />
+
+            <Button
+                android:id="@+id/btnShare"
+                style="@style/Widget.RecipeApp.Button.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            style="@style/Text.Title"
+            android:layout_marginTop="16dp"
+            android:text="@string/ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvIngredients"
+            style="@style/Text.Subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 1 cup flour\n• 2 eggs" />
+
+        <TextView
+            android:id="@+id/tvInstructionsHeader"
+            style="@style/Text.Title"
+            android:layout_marginTop="16dp"
+            android:text="@string/instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvInstructions"
+            style="@style/Text.Subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Mix ingredients\n2. Bake for 20 minutes" />
+
+    </LinearLayout>
+</ScrollView>
