@@ -1,0 +1,4 @@
+{
+    "command": "./gradlew assembleDebug",
+    "working_directory": "/home/kavia/workspace/code-generation/recipe-explorer-161808-161835/recipe_app_frontend"
+}
